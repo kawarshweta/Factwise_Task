@@ -1,12 +1,12 @@
 {
-  "homepage": "http://kawarshweta.github.io/Factwise_Task",
   "name": "factwise_react_task",
+  "homepage": "https://kawarshweta.github.io/Factwise_Task",
   "version": "1.0.0",
   "description": "Factwise Task",
   "scripts": {
     "start": "parcel index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build index.html",
     "test": "jest"
   },
