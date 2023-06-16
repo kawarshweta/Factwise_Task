@@ -21,7 +21,7 @@ const App = () => {
   };
 
   const setCardToDelete = (cardId) => {
-    celebrities = celebrities.filter((celebrity) => celebrity.id !== cardId);
+    const filteredCelebrities = celebrities.filter((celebrity) => celebrity.id !== cardId);
     setOpenDeleteCard(false);
   };
 

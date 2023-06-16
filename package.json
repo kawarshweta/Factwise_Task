@@ -3,7 +3,6 @@
   "name": "factwise_react_task",
   "version": "1.0.0",
   "description": "Factwise Task",
-  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "predeploy": "npm run build",
