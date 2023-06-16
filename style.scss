@@ -1,264 +1,264 @@
-div {
-  font-family: Roboto, sans-serif;
-  h1{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: 300;
-  }
-  .card {
-    width: 400px;
-    margin: auto;
-    border: 1px solid #c6c0c0;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    padding: 20px;
-  }
-  .edit-card {
-    position: fixed;
-    background: white;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  .error-msg {
-    font-size: 15px;
-    font-weight: 100;
-    padding: 7px;
-    border-radius: 10px;
-    background: #ff00002e;
-    color: red;
-  }
-  .card .expand {
-    width: 400px;
-    height: 340px;
-    margin: auto;
-    border: 1px solid #c6c0c0;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    padding: 20px;
-  }
-
-  .top-section {
-    justify-content: space-between;
-    display: flex;
-    height: 30px;
-    padding-top: 10px;
-    .user-icon {
-      border-radius: 50%;
-      border: 1px solid black;
-      height: 60px;
-    }
-    h2 {
-      padding-left: 20px;
-    }
-    .user {
-      display: flex;
-      align-items: center;
-      .first-name {
-        border: 1px solid #80808085;
-        border-radius: 10px;
-        padding-left: 11px;
-        margin-left: 15px;
-        width: auto;
-        height: 30px;
-        padding-top: 5px;
-      }
-    }
-    .accordion-icon {
-      color: #808080d6;
-      cursor: pointer;
-    }
-    .reversed {
-      transform: rotate(180deg);
-    }
-  }
-
-  .middle-section {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
     div {
-      h1 {
+    font-family: Roboto, sans-serif;
+    h1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: 300;
+    }
+    .card {
+        width: 400px;
+        margin: auto;
+        border: 1px solid #c6c0c0;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+    .edit-card {
+        position: fixed;
+        background: white;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .error-msg {
+        font-size: 15px;
+        font-weight: 100;
+        padding: 7px;
+        border-radius: 10px;
+        background: #ff00002e;
+        color: red;
+    }
+    .card .expand {
+        width: 400px;
+        height: 340px;
+        margin: auto;
+        border: 1px solid #c6c0c0;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    .top-section {
+        justify-content: space-between;
+        display: flex;
+        height: 30px;
+        padding-top: 10px;
+        .user-icon {
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 60px;
+        }
+        h2 {
+        padding-left: 20px;
+        }
+        .user {
+        display: flex;
+        align-items: center;
+        .first-name {
+            border: 1px solid #80808085;
+            border-radius: 10px;
+            padding-left: 11px;
+            margin-left: 15px;
+            width: auto;
+            height: 30px;
+            padding-top: 5px;
+        }
+        }
+        .accordion-icon {
         color: #808080d6;
+        cursor: pointer;
+        }
+        .reversed {
+        transform: rotate(180deg);
+        }
+    }
+
+    .middle-section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        div {
+        h1 {
+            color: #808080d6;
+            margin-bottom: -1px;
+            font-family: Roboto, sans-serif;
+            font-size: 15px;
+            font-weight: 100;
+        }
+        }
+        .age-card {
+        width: 100px;
+        border-radius: 6px;
+        margin-top: 23px;
+        padding: 4px;
+        height: 17px;
+        }
+        .Age {
+        input {
+            width: 100px;
+            border: 1px solid #80808085;
+            border-radius: 6px;
+            margin-top: 15px;
+            padding: 4px;
+        }
+        .ageInput {
+            border: 1px solid #80808085;
+            width: 100px;
+            border-radius: 6px;
+            padding: 4px;
+            margin-top: 15px;
+        }
+        }
+        .edit-age {
+        .age-value {
+            border: none;
+            width: 100px;
+            border-radius: 6px;
+            padding: 4px;
+            margin-top: 15px;
+        }
+        }
+        .edit-gender {
+        h3 {
+            border: 1px solid #80808085;
+            width: 100px;
+            border-radius: 6px;
+            padding: 4px;
+        }
+        .gender-input {
+            display: flex;
+
+            .cheveron {
+            margin-top: 20px;
+            margin-left: -23px;
+            color: gray;
+            }
+            .edit {
+            width: 100px;
+            border: 1px solid #80808085;
+            border-radius: 6px;
+            margin-top: 15px;
+            padding: 4px;
+            width: 125px;
+            }
+        }
+        }
+        .edit-country {
+        .edit {
+            border: 1px solid #80808085;
+            width: 100px;
+            border-radius: 6px;
+            padding: 4px;
+            margin-top: 15px;
+        }
+        }
+        h4 {
         margin-bottom: -1px;
+        color: #808080d6;
         font-family: Roboto, sans-serif;
         font-size: 15px;
         font-weight: 100;
-      }
-    }
-    .age-card {
-      width: 100px;
-      border-radius: 6px;
-      margin-top: 23px;
-      padding: 4px;
-      height: 17px;
-    }
-    .Age {
-      input {
-        width: 100px;
-        border: 1px solid #80808085;
-        border-radius: 6px;
-        margin-top: 15px;
-        padding: 4px;
-      }
-      .ageInput {
-        border: 1px solid #80808085;
-        width: 100px;
-        border-radius: 6px;
-        padding: 4px;
-        margin-top: 15px;
-      }
-    }
-    .edit-age {
-      .age-value {
-        border: none;
-        width: 100px;
-        border-radius: 6px;
-        padding: 4px;
-        margin-top: 15px;
-      }
-    }
-    .edit-gender {
-      h3 {
-        border: 1px solid #80808085;
-        width: 100px;
-        border-radius: 6px;
-        padding: 4px;
-      }
-      .gender-input {
-        display: flex;
-
-        .cheveron {
-          margin-top: 20px;
-          margin-left: -23px;
-          color: gray;
         }
-        .edit {
-          width: 100px;
-          border: 1px solid #80808085;
-          border-radius: 6px;
-          margin-top: 15px;
-          padding: 4px;
-          width: 125px;
-        }
-      }
-    }
-    .edit-country {
-      .edit {
-        border: 1px solid #80808085;
-        width: 100px;
-        border-radius: 6px;
-        padding: 4px;
-        margin-top: 15px;
-      }
-    }
-    h4 {
-      margin-bottom: -1px;
-      color: #808080d6;
-      font-family: Roboto, sans-serif;
-      font-size: 15px;
-      font-weight: 100;
-    }
-    h3 {
-      font-size: 15px;
-      font-weight: 100;
-    }
-    .country {
-      input {
-        margin-top: 15px;
-        border: none;
+        h3 {
+        font-size: 15px;
         font-weight: 100;
-      }
+        }
+        .country {
+        input {
+            margin-top: 15px;
+            border: none;
+            font-weight: 100;
+        }
+        }
     }
-  }
-  .description-section {
-    h2 {
-      font-family: "Roboto", sans-serif;
-      color: #808080d6;
-      font-size: 15px;
-      font-weight: 100;
+    .description-section {
+        h2 {
+        font-family: "Roboto", sans-serif;
+        color: #808080d6;
+        font-size: 15px;
+        font-weight: 100;
+        }
+        .description {
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 20px;
+        width: 350px;
+        height: 150px;
+        border: none;
+        }
     }
-    .description {
-      font-family: Roboto, sans-serif;
-      font-weight: 100;
-      font-size: 15px;
-      line-height: 20px;
-      width: 350px;
-      height: 150px;
-      border: none;
-    }
-  }
 
-  .edit-description {
-    .description {
-      border: 1px solid #80808085;
-      padding: 10px;
-      border-radius: 10px;
+    .edit-description {
+        .description {
+        border: 1px solid #80808085;
+        padding: 10px;
+        border-radius: 10px;
+        }
     }
-  }
-  .bottom-section {
-    justify-content: flex-end;
-    display: flex;
-    cursor: pointer;
-    margin-top: 20px;
-    svg {
-      margin-right: 19px;
+    .bottom-section {
+        justify-content: flex-end;
+        display: flex;
+        cursor: pointer;
+        margin-top: 20px;
+        svg {
+        margin-right: 19px;
+        }
+        .trash-icon {
+        color: #ff0000d4;
+        }
+        .edit-icon {
+        color: #03a9f4;
+        }
+        .delete {
+        color: #ff0000d4;
+        }
+        .save {
+        color: green;
+        }
+        .delete-confirmation {
+        width: 53%;
+        z-index: 1;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        right: 0;
+        border: 1px solid gray;
+        height: 160px;
+        border-radius: 10px;
+        margin: auto;
+        top: 50%;
+        }
+        .delete-box {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        padding: 10px;
+        }
+        .checkbox {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+        padding-right: 28px;
+        }
+        .yescheckbox {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #e64a19;
+        border: none;
+        color: white;
+        cursor: pointer;
+        }
+        .nocheckbox {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #ffff;
+        margin-right: 12px;
+        border: 1px solid gray;
+        cursor: pointer;
+        }
     }
-    .trash-icon {
-      color: #ff0000d4;
     }
-    .edit-icon {
-      color: #03a9f4;
-    }
-    .delete {
-      color: #ff0000d4;
-    }
-    .save {
-      color: green;
-    }
-    .delete-confirmation {
-      width: 53%;
-      z-index: 1;
-      background: #fff;
-      position: fixed;
-      left: 0;
-      right: 0;
-      border: 1px solid gray;
-      height: 160px;
-      border-radius: 10px;
-      margin: auto;
-      top: 50%;
-    }
-    .delete-box {
-      align-items: center;
-      justify-content: space-between;
-      display: flex;
-      padding: 10px;
-    }
-    .checkbox {
-      align-items: center;
-      display: flex;
-      justify-content: end;
-      padding-right: 28px;
-    }
-    .yescheckbox {
-      width: 100px;
-      height: 40px;
-      border-radius: 10px;
-      background-color: #e64a19;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-    .nocheckbox {
-      width: 100px;
-      height: 40px;
-      border-radius: 10px;
-      background-color: #ffff;
-      margin-right: 12px;
-      border: 1px solid gray;
-      cursor: pointer;
-    }
-  }
-}
