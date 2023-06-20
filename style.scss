@@ -1,3 +1,6 @@
+#root{
+    width: auto;
+}    
     div {
     font-family: Roboto, sans-serif;
     h1{
@@ -13,6 +16,9 @@
         border-radius: 10px;
         margin-bottom: 40px;
         padding: 20px;
+        @media only screen and (max-width: 480) {
+            max-width: 350px;
+          }
     }
     .edit-card {
         position: fixed;
@@ -37,6 +43,9 @@
         border-radius: 10px;
         margin-bottom: 40px;
         padding: 20px;
+        @media only screen and (max-width: 480) {
+            max-width: 350px;
+          }
     }
 
     .top-section {
@@ -218,7 +227,7 @@
         color: green;
         }
         .delete-confirmation {
-        width: 53%;
+        width: 450;
         z-index: 1;
         background: #fff;
         position: fixed;
@@ -229,6 +238,9 @@
         border-radius: 10px;
         margin: auto;
         top: 50%;
+        @media only screen and (max-width: 480) {
+            max-width: 400;
+          }
         }
         .delete-box {
         align-items: center;
