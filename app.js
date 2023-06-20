@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createRoot } from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import Card from "./src/components/Card";
 import EditCard from "./src/components/EditCard";
@@ -10,6 +10,7 @@ const App = () => {
   const [openEditCard, setOpenEditCard] = useState(false);
   const [cardToEdit, setCardToEdit] = useState(null);
   const [openDeleteCard, setOpenDeleteCard] = useState(false);
+  
 
   const handleCardClick = (cardId) => {
     setExpandedCard((prevState) => (prevState === cardId ? null : cardId));
@@ -49,12 +50,14 @@ const App = () => {
 
       {celebrities.map((card, index) => (
         <Card
-          editCard={() => handleEditCard(index)}
           key={card.id}
+          editCard={() => handleEditCard(index)}
           {...card}
           isExpanded={expandedCard === card.id}
           onCardClick={() => handleCardClick(card.id)}
           deleteCard={() => handleDeleteCard(card.id)}
+          cardId={card.id}
+          // deleteCard={deleteCard}
         />
       ))}
     </div>

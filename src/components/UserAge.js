@@ -18,7 +18,7 @@ const UserAge = (props) => {
     <div className="age edit-age">
       <h4>Age</h4>
       {/* <h3>{calculateAge(props.dateOfBirth)} Years/</h3> */}
-      <input  className="age-value" type="text" value={calculateAge(props.dateOfBirth)} />
+      <input  className="age-value" type="text" value={calculateAge(props.dateOfBirth)} readOnly />
     </div>
   );
 };

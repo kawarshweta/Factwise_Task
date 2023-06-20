@@ -29,14 +29,18 @@ function Card(props) {
     : "accordion-icon";
 
   const [deleteMode, setDeleteMode] = useState(false);
+  const[deletedCardId, setDeletedCardId] = useState(null);
 
   const handleDelete = (cardId) => {
-    // console.log("cardId", cardId);
     deleteCard(cardId);
+    setDeletedCardId(cardId);
     console.log("user deleted", cardId);
   };
-
   const isAdult = dob >= 18;
+
+  if(deletedCardId === cardId){
+    return null;
+  }
 
   return (
     <div>
@@ -72,18 +76,18 @@ function Card(props) {
               </div>
               <div className="country">
                 <h4>Country</h4>
-                <input type="text" value={country} />
+                <input type="text" value={country} onChange={(e) => {}}/>
               </div>
             </div>
             <div className="description-section">
               <h2>Description</h2>
-              <textarea className="description" value={description}></textarea>
+              <textarea className="description" value={description} readOnly></textarea>
             </div>
             <div className="bottom-section">
               {deleteMode ? (
                 <DeletePopup
                   setDeleteMode={setDeleteMode}
-                  handleDelete={handleDelete}
+                  handleDelete={() => handleDelete(cardId)}
                   cardId={cardId}
                 />
               ) : (
